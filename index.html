@@ -4,45 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>info</title>
     <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            }
         #header {
-            background-color: pink;
-        }
-         #nav {
+            height: 20%;
+            background-color:pink;
+            }
+        h1 {
+            font-size: 40px;
+            text-align:center;
+            }
+        #nav {
             width: 15%;
-            background-color: yellow;
-            float: left;
-        }
-        #container {
-            width: 85%;
-            background-color:skyblue;
-            float: right;
-        }
+            height: 70%;
+            background-color:yellow;
+            float:left;
+            }
         #footer {
-            background-color: grey;
+            height: 10%;
+            background-color:grey;
             clear: both;
+            }
+        #container {
+            width:85%;
+            height:70%;
+            float:right;
+            }
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
         }
-
+        #container ul:active {
+            display : none;
+        }
+        #container div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: ex;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ex {
+            0% {
+                background-color: red;
+                left: 0px; 
+                top: 0px;
+            }
+            25% {
+                background-color: yellow;
+                left: 200px; 
+                top: 0px
+            }
+            50% {
+                background-color: green;
+                left: 200px; 
+                top: 200px;
+            }
+            75% {
+                background-color: blue;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
     </style>
 </head>
 <body>
     <div id="header">
-        <h1>사이트 제목</h1>
-    <div id="nav"
+        <h1>My homepage</h1>
+    </div>
+    <div id="nav">
         <ul>
             <li>홈페이지</li>
             <li>자기소개</li>
-            <li>학교생활</li>
             <li>방과후</li>
             <li>오늘계획</li>
-         </ul>
+        </ul>
     </div>
     <div id="container">
-        <p>....</p>
+        <h2>Todo list</h2>
+        <ul>
+            <li>온라인 수업 듣기</li>
+            <li>수행평가 준비하기</li>
+            <li>학원 다녀 오기</li>
+        </ul>
+        <hr>
     </div>
     <div id="footer">
-        github 주소 : ...
+        https://jasonrhie.github.io/sehwa/
     </div>
+    
 </body>
 </html>
